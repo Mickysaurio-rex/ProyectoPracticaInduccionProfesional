@@ -16,7 +16,7 @@
                          >
                 <StackLayout>
                     <Label Text="Nombre" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
-                    <Entry MaxLength="10"
+                    <Entry x:Name="Nombre"  MaxLength="10"
                            ClearButtonVisibility="WhileEditing"
                            >
                         <Entry.Keyboard>
@@ -39,15 +39,15 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Text="Peso" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
-                    <Entry />
+                    <Label Text="Peso" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36" />
+                    <Entry x:Name="Peso" MaxLength="3" Keyboard="Numeric"/>
                     <Label Grid.Column="1" Text="Tamaño" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
-                    <Entry Grid.Column="1"/>
+                    <Entry x:Name="Tamano" Grid.Column="1" MaxLength="3" Keyboard="Numeric"/>
                 </Grid>
 
                 <StackLayout>
                     <Label Text="Raza" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
-                    <Entry MaxLength="10"
+                    <Entry x:Name="Raza" MaxLength="10"
                            ClearButtonVisibility="WhileEditing"
                            >
                         <Entry.Keyboard>
@@ -84,23 +84,23 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <Entry/>
+                                <Entry MaxLength="2" x:Name="Dia" Keyboard="Numeric"/>
                                 <Label HorizontalOptions="Center" Text="Dia" FontSize="Caption" FontFamily="OpenSansR" TextColor="#1B4C36"/>
-                                <Entry Grid.Column="1" />
+                                <Entry Grid.Column="1" x:Name="Mes" MaxLength="2" Keyboard="Numeric"/>
                                 <Label Grid.Column="1" Text="Mes" HorizontalOptions="Center" FontSize="Caption" FontFamily="OpenSansR" TextColor="#1B4C36"/>
 
                             </Grid>
                         </StackLayout>
                     </StackLayout>
                     <Label Text="Edad" Grid.Column="1" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
-                    <Entry Grid.Column="1"/>
+                    <Entry Grid.Column="1" x:Name="Edad" Keyboard="Numeric" MaxLength="2"/>
                 </Grid>
 
                 <StackLayout>
                     <Label Text="Pedigri" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                        <CheckBox/>
-                        <CheckBox/>
+                        <CheckBox x:Name="tienePedigri" BackgroundColor="Green"/>
+                        <CheckBox x:Name="noTienePedigri" BackgroundColor="Red"/>
                     </StackLayout>
                     
                 </StackLayout>

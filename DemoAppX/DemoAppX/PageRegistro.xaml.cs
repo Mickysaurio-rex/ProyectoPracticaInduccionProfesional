@@ -18,7 +18,17 @@ namespace DemoAppX
         }
         async void Ir(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginaTinder());
+          if(Nombre.Text != null && Peso.Text != null && Tamano != null && Raza.Text != null && Dia.Text != null && Mes.Text 
+                != null && Edad.Text != null)
+            {
+                await Navigation.PushAsync(new PaginaTinder());
+            }
+            
+        }
+
+        private void DisplayAlert(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

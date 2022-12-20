@@ -4,9 +4,10 @@
              xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
              x:Class="DemoAppX.PaginaTinder">
 
-    <StackLayout Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)">
+    <StackLayout  Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)">
             <swipeCardView:SwipeCardView
-                x:Name="SwipeView1"
+                
+            x:Name="SwipeView1"
                 ItemsSource = "{Binding Profiles}"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
