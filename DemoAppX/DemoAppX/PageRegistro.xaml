@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoAppX.PageRegistro">
+    <ContentPage.Content>
+        <StackLayout Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)"
+                     Padding="20,70,20,120"
+                     >
+            <Rectangle Background="white"
+                       Opacity="0.25"
+                       HeightRequest="560"
+                       />
+            <StackLayout Spacing="30"
+                         Padding="30,50,30,50"
+                         TranslationY="-550"
+                         >
+                <StackLayout>
+                    <Label Text="Nombre" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <Entry MaxLength="10"
+                           ClearButtonVisibility="WhileEditing"
+                           >
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>
+                                        Suggestion,CapitalizeWord
+                                    </KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </StackLayout>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Peso" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <Entry />
+                    <Label Grid.Column="1" Text="Tamaño" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <Entry Grid.Column="1"/>
+                </Grid>
+
+                <StackLayout>
+                    <Label Text="Raza" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <Entry MaxLength="10"
+                           ClearButtonVisibility="WhileEditing"
+                           >
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>
+                                        Suggestion,CapitalizeWord
+                                    </KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </StackLayout>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                        </Grid>
+                        <Label Text="Cumpleaños" TextColor="#1B4C36" FontSize="Medium" FontFamily="OpenSansSB"/>
+                        <StackLayout Grid.Row="1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Entry/>
+                                <Label HorizontalOptions="Center" Text="Dia" FontSize="Caption" FontFamily="OpenSansR" TextColor="#1B4C36"/>
+                                <Entry Grid.Column="1" />
+                                <Label Grid.Column="1" Text="Mes" HorizontalOptions="Center" FontSize="Caption" FontFamily="OpenSansR" TextColor="#1B4C36"/>
+
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label Text="Edad" Grid.Column="1" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <Entry Grid.Column="1"/>
+                </Grid>
+
+                <StackLayout>
+                    <Label Text="Pedigri" FontSize="Medium" FontFamily="OpenSansSB" TextColor="#1B4C36"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                        <CheckBox/>
+                        <CheckBox/>
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <Button Text="Next" Clicked="Ir" />
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoAppX.PaginaInformacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame CornerRadius="30" WidthRequest="60" HeightRequest="30" BackgroundColor="Aquamarine">
+                <Label x:Name="LabelNombre" FontFamily="OpenSansB" TextColor="Black"/>    
+            </Frame>
+            <Frame CornerRadius="30" WidthRequest="60" HeightRequest="30" BackgroundColor="AliceBlue">
+                <Label x:Name="LabelEdad" FontFamily="OpenSansB" TextColor="Black"/>    
+            </Frame>
+            <Frame CornerRadius="30" WidthRequest="60" HeightRequest="30" BackgroundColor="BurlyWood">
+                <Label x:Name="LabelDescripcion" FontFamily="OpenSansB" TextColor="Black"/>    
+            </Frame>
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

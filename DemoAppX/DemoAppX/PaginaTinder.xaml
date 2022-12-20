@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
+             x:Class="DemoAppX.PaginaTinder">
+
+    <StackLayout Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)">
+            <swipeCardView:SwipeCardView
+                x:Name="SwipeView1"
+                ItemsSource = "{Binding Profiles}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="10"
+                SupportedSwipeDirections="Left,Right,Up">
+                <swipeCardView:SwipeCardView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Frame CornerRadius="10" 
+                                   Padding="8"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="EndAndExpand">
+                                <AbsoluteLayout>
+                                    <Image Source="{Binding Photo}" Aspect="AspectFill"
+                                           AbsoluteLayout.LayoutBounds=".5,0.5,1,1" 
+                                           AbsoluteLayout.LayoutFlags="All">
+                                        
+                                    </Image>
+                                <Label FontSize="Large"
+                                           FontAttributes="Bold"
+                                           TextColor="White"
+                                           AbsoluteLayout.LayoutBounds="0.1,0.95,150,30"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Name}"></Span>
+                                            <Span Text=","></Span>
+                                            <Span Text="{Binding Age}"></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                </AbsoluteLayout>
+                                
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </swipeCardView:SwipeCardView.ItemTemplate>
+                
+            </swipeCardView:SwipeCardView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10,10,10,20" Spacing="30">
+                <StackLayout>
+                    <Button x:Name="nopeButton" ImageSource="xTinder.png" Clicked="nopeButton_Clicked"
+                            WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="White"
+                            Scale="1"  BorderWidth="1">
+                    </Button>
+                </StackLayout>
+                <StackLayout>
+                    <Button x:Name="superLikeButton" ImageSource="superLikeTinder.png" Clicked="superLikeButton_Clicked"
+                            WidthRequest="50" HeightRequest="50" CornerRadius="30" BackgroundColor="White"
+                             BorderWidth="1" Scale="1">
+                    </Button>
+                </StackLayout>
+                <StackLayout>
+                <Button x:Name="likeButton" ImageSource="corazonTinder.png" Clicked="likeButton_Clicked"
+                             BorderWidth="1" WidthRequest="60" HeightRequest="60" CornerRadius="30" BackgroundColor="White"
+                            Scale="1">
+                </Button>
+                </StackLayout>
+            </StackLayout>
+        <Button Text="inf" Clicked="Button_Clicked"/>
+    </StackLayout>
+    
+</ContentPage>

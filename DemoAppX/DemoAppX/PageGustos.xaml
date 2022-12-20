@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="DemoAppX.PageGustos">
+    <StackLayout Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)"
+                 Padding="10,25,0,0">
+        <StackLayout Padding="0,0,100,0">
+
+            <Label Text="Escoge los gustos de tu hijo"
+                       FontSize="Medium"
+                       TextColor="#1B4C36"
+                       FontFamily="OpenSansEB"/>
+        </StackLayout>
+        <ScrollView Padding="0,50,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--<sh:Shadows x:Name="CatShadows"
+                            CornerRadius="40">
+                    <sh:Shadows.Shades>
+                        <sh:ImmutableShades>
+                            <sh:Shade BlurRadius="40"
+                                      Opacity="1"
+                                      Offset="0,0"
+                                      Color="linear-gradient(270deg, rgba(224,249,246,1) 0%, rgba(200,230,241,1) 49%, rgba(153,197,255,1) 100%)" />
+                            <sh:Shade BlurRadius="10"
+                      Opacity="0.5"
+                      Offset="10,10"
+                      Color="#00B0FB" />
+                        </sh:ImmutableShades>
+                    </sh:Shadows.Shades>
+                    <Frame WidthRequest="80"
+           Padding="10"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           BackgroundColor="White"
+           CornerRadius="10">
+                        <Image Source="{images:ImageResource nyan_cat.png}" />
+                    </Frame>
+                    </sh:Shadows>-->
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

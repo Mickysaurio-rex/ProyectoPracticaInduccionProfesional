@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls ="clr-namespace:DemoAppX.MyControls"
+             x:Class="DemoAppX.MainPage">
+
+    <StackLayout Background="White">
+        <Image VerticalOptions="Start" HorizontalOptions="StartAndExpand" Source="ImagenParteSuperiorP1.png"/>
+        <StackLayout Margin="40, 0, 40, 0" Spacing="10">
+            <Button Text="Sign in with Google"
+                HeightRequest="50"
+                WidthRequest="600"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                TextColor="White"    
+                FontSize="Medium"
+                FontFamily="InterR"
+                CornerRadius="20"
+                Background="linear-gradient(19deg, rgba(189,65,65,1) 33%, rgba(237,18,18,1) 80%, rgba(255,0,0,1) 100%)"
+                Clicked="Ir"
+                ImageSource="LogoGoogle.png"
+                ContentLayout="Right, 10"
+                Padding="10,0,30,0"
+                />
+            <Button Text="Sign in with Facebook"
+                HeightRequest="50"
+                WidthRequest="600"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                TextColor="White"    
+                FontSize="Medium"
+                FontFamily="InterR"
+                CornerRadius="20"
+                Background="linear-gradient(163deg, rgba(94,150,233,1) 0%, rgba(32,24,87,1) 100%)"
+                Clicked="Ir"
+                ImageSource="LogoFacebook.png"
+                ContentLayout="Right, 10"
+                Padding="10,0,30,0"
+                />
+            <Button Text="Sign in with Instagram"
+                HeightRequest="50"
+                WidthRequest="600"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                TextColor="White"    
+                FontSize="Medium"
+                FontFamily="InterR"
+                CornerRadius="20"
+                Background="linear-gradient(180deg, rgba(77,63,158,1) 0%, rgba(148,62,160,1) 30%, rgba(199,42,82,1) 54%, rgba(214,166,57,1) 90%)"
+                Clicked="Ir"
+                ImageSource="LogoInstagram.png"
+                ContentLayout="Right, 10"
+                Padding="10,0,30,0"
+                />
+       
+        </StackLayout>
+        <Image VerticalOptions="End" HorizontalOptions="End"  Source="ImagenParteInferiorP1.png"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoAppX.PageTipo">
+    <ContentPage.Content>
+        <StackLayout Background="linear-gradient(270deg, rgba(217,217,217,1) 0%, rgba(108,226,166,1) 100%)">
+            <StackLayout HeightRequest="30" >
+                <Label Text="¿A quien le arreglaremos una cita?"
+                   
+                   FontFamily="OpenSansEB"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"
+                       TranslationX="3"
+                       Opacity="0.2"
+                   TextColor="Black"/>
+                <Label Text="¿A quien le arreglaremos una cita?"
+                   
+                   FontFamily="OpenSansEB"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"
+                   TextColor="#1B4C36"
+                   
+                   TranslationY="-31"/>
+            </StackLayout>
+            
+            <StackLayout
+                         
+                         HeightRequest="300">
+                <Ellipse    
+                         Fill="linear-gradient(270deg, rgba(224,249,246,1) 0%, rgba(200,230,241,1) 49%, rgba(153,197,255,1) 100%)"
+                         WidthRequest="160"
+                         HeightRequest="160"
+                         HorizontalOptions="Center" 
+                         TranslationY="30"
+                    
+                    >
+                </Ellipse>
+
+                <Ellipse    
+                         Fill="Black"
+                         WidthRequest="125"
+                         HeightRequest="125"
+                         HorizontalOptions="Center"
+                         TranslationX="-1"
+                         TranslationY="-120"
+                         Opacity="0.3"
+                         
+                        >
+                </Ellipse>
+
+                <Image Source="perroSeleccion.jpg"
+                   TranslationY="-251"
+                   >
+                    <Image.Clip>
+                        <EllipseGeometry 
+                        RadiusX="60"
+                         RadiusY="60"
+                         Center="195,60" />
+
+                    </Image.Clip>
+                </Image>
+                <Label Text="PERRO"
+                       HorizontalOptions="Center"
+                       TranslationY="-225"
+                       FontSize="Medium"
+                       FontFamily="OpenSansEB"
+                       TextColor="#1B4C36"
+                       />
+                <CheckBox   HorizontalOptions="Center"
+                            TranslationY="-258"
+                            TranslationX="-45"
+                            Color="#1B4C36"/>
+            </StackLayout>
+            <StackLayout 
+                         HeightRequest="300">
+                <Ellipse    
+                         Fill="linear-gradient(270deg, rgba(224,249,246,1) 0%, rgba(200,230,241,1) 49%, rgba(153,197,255,1) 100%)"
+                         WidthRequest="160"
+                         HeightRequest="160"
+                         HorizontalOptions="Center" 
+                         TranslationY="30"
+                    
+                    />
+                <Ellipse    
+                         Fill="Black"
+                         WidthRequest="125"
+                         HeightRequest="125"
+                         HorizontalOptions="Center"
+                         TranslationX="-1"
+                         TranslationY="-120"
+                         Opacity="0.3"
+                         
+                        >
+                </Ellipse>
+                <Image Source="gatoSeleccion.jpg"
+                   TranslationY="-251"
+                   >
+                    <Image.Clip>
+                        <EllipseGeometry 
+                        RadiusX="60"
+                         RadiusY="60"
+                         Center="195,60" />
+
+                    </Image.Clip>
+                </Image>
+                <Label Text="GATO"
+                       HorizontalOptions="Center"
+                       TranslationY="-225"
+                       FontSize="Medium"
+                       FontFamily="OpenSansEB"
+                       TextColor="#1B4C36"
+                       />
+                <CheckBox   HorizontalOptions="Center"
+                            TranslationY="-258"
+                            TranslationX="-45"
+                            Color="#1B4C36"/>
+
+            </StackLayout>
+            <Button Text="NEXT"
+                    HorizontalOptions="Center"
+                    FontFamily="OpenSansB"
+                    FontSize="Title"
+                    Clicked="Ir"
+                    
+                    >
+            </Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
